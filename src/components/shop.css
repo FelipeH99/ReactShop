@@ -52,16 +52,16 @@
 
 .product-card .AddToCartButton {
   margin-top: 10px;
-  background-color: #f7b3f7c9; /* Green */
+  background-color: #ead7e5; 
   border: none;
-  color: white;
+  color: black;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
 }
-.product-card .AddToCartButton:hover {background-color: #3e8e41}
+.product-card .AddToCartButton:hover {background-color: #8d7286}
 
 .LearnMoreButton{
   all:unset;
@@ -75,7 +75,7 @@
   background-color: #343a34
 }
 .product-card .AddToCartButton:active {
-  background-color: #ee1ba7;
+  background-color: #8d7286;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }

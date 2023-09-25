@@ -18,11 +18,19 @@ export const Product = ({
   };
 
   const handleQuantityChange = (e) => {
-    const newCantidad = parseInt(e.target.value, 10);
-    setCantidad(newCantidad);
-    handleChangeTotal(newCantidad - quantity);
+    const newQuantity = parseInt(e.target.value, 10);
+    if (isNaN(newQuantity)) {
+      // If newQuantity is not a number, don't update the state
+      return;
+    }
+    setCantidad(newQuantity);
   };
+  const [cartQuantity, setCartQuantity] = useState(0);
 
+  const handleAddToCart = () => {
+    handleChangeTotal(cantidad - cartQuantity);
+    setCartQuantity(cantidad);
+  };
   return (
     <div className="product-card">
       <img src={imageUrl} width="500px" height="500px" alt={name} />
@@ -32,16 +40,16 @@ export const Product = ({
       <input
         type="text"
         value={titulo}
-        onChange={(e) => handleTitleChange(e)}
+        onChange={(e) => handleTitleChange(parseInt(e.target.value, 10))}
+        min="0"
       />
       <p>{titulo}</p>
       <label>Quantity:</label>
-      <input
-        type="number"
-        value={cantidad}
-        onChange={(e) => handleQuantityChange(e)}
-      />
-      <button className="AddToCartButton">Add to Cart</button>
+      <input type="number" value={cantidad} onChange={handleQuantityChange} />
+
+      <button onClick={handleAddToCart} className="AddToCartButton">
+        Add to Cart
+      </button>
       <button className="LearnMoreButton">Learn More</button>
     </div>
   );
