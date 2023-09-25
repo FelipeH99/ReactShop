@@ -1,6 +1,4 @@
-// pages/index.js (or Home.js)
-
-import Shop from './components/Shop'; // Import the Shop component
+import Shop from './components/shop'; // Import the Shop component
 
 export default function Home() {
   return (
@@ -11,6 +9,6 @@ export default function Home() {
     </div>
   );
 }
-// pages/index.js (or Home.js)
+
 
 
