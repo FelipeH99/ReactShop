@@ -7,8 +7,11 @@
 .total-quantity {
   width: 100%;
   text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-top: 10rem;
+  margin-bottom: 0px;
+  color: black;
+  font-family: "Times New Roman" ;
 }
 
 .product-card {
@@ -16,17 +19,17 @@
   flex-direction: column;
   align-items: center;
   width: 300px;
-  border: 1px solid #ccc;
+  border: 2px solid #050505;
   border-radius: 10px;
   margin: 10px;
   padding: 20px;
+  justify-content: space-between;
 }
 .FontSizeTable{
-  display: grid;
+  display: flex;
   align-items: center;
   padding: 20px 40px;
   justify-content: end;
-  /*background-color: #343a34;*/
   height:8rem;
   font-size: 20px;
 
@@ -39,6 +42,7 @@
 
 .product-card h2 {
   font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .product-card p {
@@ -51,15 +55,16 @@
 }
 
 .product-card .AddToCartButton {
-  margin-top: 10px;
-  background-color: #ead7e5; 
+  margin-top: 10rem;
+  background-color: #ead7e5;
+  height: 3rem;
   border: none;
   color: black;
-  padding: 15px 32px;
+  padding: 10px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
+  border: 2px solid black;
 }
 .product-card .AddToCartButton:hover {background-color: #8d7286}
 
@@ -67,15 +72,20 @@
   all:unset;
   background: none;
   margin: 0;
-  text-decoration: underline white;
+  text-decoration: underline black;
   padding: 1rem;
   margin-top: 0.5rem;
 }
 .LearnMoreButton:hover{
-  background-color: #343a34
+  background-color: #cccccc
 }
 .product-card .AddToCartButton:active {
   background-color: #8d7286;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+.LearnMoreButton:active {
+  background-color: #d3d3d3;
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
 }

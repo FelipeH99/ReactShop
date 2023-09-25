@@ -43,12 +43,11 @@ export const Product = ({
         onChange={(e) => handleTitleChange(parseInt(e.target.value, 10))}
         min="0"
       />
-      <p>{titulo}</p>
       <label>Quantity:</label>
       <input type="number" value={cantidad} onChange={handleQuantityChange} />
 
       <button onClick={handleAddToCart} className="AddToCartButton">
-        Add to Cart
+        Add to cart
       </button>
       <button className="LearnMoreButton">Learn More</button>
     </div>

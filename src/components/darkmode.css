@@ -1,0 +1,100 @@
+.dark-mode-switch {
+    position: fixed;
+    top: 10rem;
+    left: 3rem;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 30px;
+    padding: 1px;
+  }
+  .dark .dark-mode-switch {
+    position: fixed;
+    top: 8rem;
+    left: 3rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 1px;
+  }
+  
+  .dark-mode-switch input[type="checkbox"] {
+    appearance: none;
+    width: 60px;
+    height: 20px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .dark-mode-switch input[type="checkbox"]:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 24px;
+    height: 24px;
+    background-color: #463939;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .dark-mode-switch input[type="checkbox"]:checked {
+    background-color: #666666;
+  }
+  
+  .dark-mode-switch input[type="checkbox"]:checked:before {
+    transform: translateX(40px);
+  }
+  body.dark {
+    background-color: #333;
+    color: white;
+  }
+  
+  .dark .shop {
+    background-color: #333;
+  }
+  
+  .dark .total-quantity {
+    color: white;
+  }
+  
+  .dark .product-card {
+    border-color: white;
+    color: white;
+  }
+  
+  .dark .product-card .AddToCartButton {
+    background-color: #555;
+    color: white;
+    border-color: white;
+  }
+  
+  .dark .product-card .AddToCartButton:hover {
+    background-color: #777;
+  }
+  
+  .dark .product-card .AddToCartButton:active {
+    background-color: #999;
+  }
+  
+  .dark .LearnMoreButton:hover {
+    background-color: #555;
+  }
+  
+  .dark .LearnMoreButton:active {
+    background-color: #777;
+  }
+  .dark .switchText{
+    color: black;
+  }
+  .switchText{
+    color: rgb(255, 255, 255);
+  }
+  .dark-mode-switch{
+    color: black;
+  }
