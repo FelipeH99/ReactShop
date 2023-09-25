@@ -28,7 +28,7 @@ const Shop = () => {
       title: "Hamburguesa",
       price: 10.99,
       quantity: 0,
-      description: "This is a great product!",
+      description: "Hamburguesa completa",
       imageUrl: hamburgesa,
     },
     {
