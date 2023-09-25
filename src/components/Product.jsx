@@ -33,7 +33,7 @@ export const Product = ({
   };
   return (
     <div className="product-card">
-      <img src={imageUrl} width="500px" height="500px" alt={name} />
+      <img src={imageUrl} width="500px" height="500px" alt={title} />
       <h2 style={{ fontSize: `${fontSize}px` }}>{titulo}</h2>
       <p>{description}</p>
       <p>Price: ${price}</p>
