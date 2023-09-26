@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
 "use client";
-import { Product } from "Product";
+
 import { useState } from "react";
 import "shop.css";
+import { Product } from "./Product";
 const hamburgesa =
   "https://www.unileverfoodsolutions.com.co/dam/global-ufs/mcos/NOLA/calcmenu/recipes/col-recipies/fruco-tomate-cocineros/HAMBURGUESA%201200x709.png";
 const papitas =
