@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./App.css";
 import DarkModeSwitch from "./components/DarkModeSwitch";
-import Navbar from "./components/NavBar";
+import Navbar from "./components/Navbar";
 import Shop from "./components/Shop";
 
 function App() {
