@@ -15,15 +15,13 @@ const tacos =
 const milanesa =
   "https://vinomanos.com/wp-content/uploads/2019/02/milanesas-receta.jpg";
 const fideo = "https://i.blogs.es/fb6298/salsa_bolonesa_rec/840_560.jpg";
-const ensalada =
-  "https://www.gourmet.cl/wp-content/uploads/2016/09/Ensalada_C%C3%A9sar-web-553x458.jpg";
 const Shop = () => {
   const [font, setFont] = useState(16);
   const handleFontSizeChange = (e) => {
     setFont(e.target.value);
   };
 
-  const [products, setProducts] = useState([
+  const [products] = useState([
     {
       id: 1,
       title: "Hamburguesa",

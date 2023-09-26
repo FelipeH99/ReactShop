@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Shop from "./components/Shop";
+import Navbar from "./components/NavBar";
+import Shop from "./components/shop";
 
 function App() {
   return (
