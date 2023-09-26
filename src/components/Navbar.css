@@ -6,9 +6,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
     top: 0;
     width: 100%;
+    padding: 0 20px;
+
   }
   
   .leftSide {

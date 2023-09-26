@@ -21,9 +21,8 @@ const DarkModeSwitch = () => {
 
   return (
     <label className="dark-mode-switch">
-      <p className="switchText">{isDarkMode ? "Light Mode" : "Dark Mode"}</p>
+      <p className="switchText">Dark Mode</p>
       <input type="checkbox" checked={isDarkMode} onChange={toggleDarkMode} />
-      <span className="slider"></span>
     </label>
   );
 };

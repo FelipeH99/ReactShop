@@ -72,14 +72,6 @@ const Shop = () => {
       description: "Plato de tallarines con salsa bolognesa",
       imageUrl: fideo,
     },
-    {
-      id: 7,
-      title: "Ensalada",
-      price: 9.49,
-      quantity: 0,
-      description: "Ensalada cesar con pollo",
-      imageUrl: ensalada,
-    },
   ]);
   const [totalQuantity, setTotalQuantity] = useState(0);
 
@@ -87,11 +79,21 @@ const Shop = () => {
     setTotalQuantity(totalQuantity + data);
   };
   return (
-    <div className="centered-content">
-      <div className="shop">
-        <div className="total-quantity">
-          <p>Total Quantity: {totalQuantity}</p>
+    <div className="shop">
+      <div className="total-quantity">
+        <p>Total Quantity: {totalQuantity}</p>
+        <div className="font-Range">
+          <span>Font size</span>
+          <input
+            type="range"
+            min="12"
+            max="32"
+            value={font}
+            onChange={(e) => handleFontSizeChange(e)}
+          />
         </div>
+      </div>
+      <div className="centered-content">
         {products.map(
           ({ id, description, imageUrl, title, price, quantity }) => (
             <Product
