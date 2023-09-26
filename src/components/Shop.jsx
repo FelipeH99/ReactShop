@@ -87,33 +87,26 @@ const Shop = () => {
     setTotalQuantity(totalQuantity + data);
   };
   return (
-    <div className="shop">
-      <div className="total-quantity">
-        <p>Total Quantity: {totalQuantity}</p>
-
-        <div className="FontSizeTable">
-          <p>Font size</p>
-          <input
-            type="range"
-            min="12"
-            max="32"
-            value={font}
-            onChange={(e) => handleFontSizeChange(e)}
-          />
+    <div className="centered-content">
+      <div className="shop">
+        <div className="total-quantity">
+          <p>Total Quantity: {totalQuantity}</p>
         </div>
+        {products.map(
+          ({ id, description, imageUrl, title, price, quantity }) => (
+            <Product
+              key={`${id}`}
+              handleChangeTotal={handleChangeTotal}
+              description={description}
+              fontSize={font}
+              imageUrl={imageUrl}
+              title={title}
+              price={price}
+              quantity={quantity}
+            />
+          )
+        )}
       </div>
-      {products.map(({ id, description, imageUrl, title, price, quantity }) => (
-        <Product
-          key={`${id}`}
-          handleChangeTotal={handleChangeTotal}
-          description={description}
-          fontSize={font}
-          imageUrl={imageUrl}
-          title={title}
-          price={price}
-          quantity={quantity}
-        />
-      ))}
     </div>
   );
 };

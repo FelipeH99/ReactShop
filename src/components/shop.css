@@ -1,7 +1,17 @@
 .shop {
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
+  width: fit-content;
+  flex-grow: 0;
+  gap: 2rem;
+  
+}
+
+.centered-content{
+  justify-content: center;
+  display: flex;
+  width: 100%;
   
 }
 
@@ -12,7 +22,7 @@
   margin-top: 10rem;
   margin-bottom: 0px;
   color: black;
-  font-family: "Times New Roman" ;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   
 }
 
@@ -21,13 +31,12 @@
   flex-direction: column;
   align-items: center;
   width: 300px;
-  border: 2px solid #050505;
   border-radius: 10px;
-  margin: 10px;
   padding: 20px;
   justify-content: space-between;
+  box-shadow: rgba(79, 94, 113, 0.12) 0px 0px 2px 0px, rgba(79, 94, 113, 0.11) 0px 2px 4px 0px, rgba(79, 94, 113, 0.1) 0px 4px 8px 0px;
 }
-.FontSizeTable{
+.fontSizeTable{
   display: flex;
   align-items: center;
   padding: 20px 40px;
@@ -54,6 +63,8 @@
 .product-card input[type="text"],
 .product-card input[type="number"] {
   width: 100%;
+  background-color: white;
+  color: black;
 }
 
 .product-card .AddToCartButton {

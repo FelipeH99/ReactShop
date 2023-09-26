@@ -1,12 +1,16 @@
+import DarkModeSwitch from "./DarkModeSwitch";
 import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="logo">MyShop</div>
+      <div className="leftSide">
+        <h1>MyShop</h1>
+        <DarkModeSwitch />
+      </div>
       <ul className="nav-links">
         <li>
-          <a href="/">Home</a>
+          <a href="/ReactShop/">Home</a>
         </li>
         <li>
           <a href="https://github.com/FelipeH99/ReactShop">Github Repo</a>

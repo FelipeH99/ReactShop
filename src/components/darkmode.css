@@ -1,7 +1,4 @@
 .dark-mode-switch {
-    position: fixed;
-    top: 10rem;
-    left: 3rem;
     display: flex;
     align-items: center;
     background-color: #333;
@@ -9,12 +6,8 @@
     padding: 1px;
   }
   .dark .dark-mode-switch {
-    position: fixed;
-    top: 8rem;
-    left: 3rem;
     display: flex;
     align-items: center;
-    background-color: rgb(255, 255, 255);
     border-radius: 30px;
     padding: 1px;
   }
@@ -54,6 +47,7 @@
     background-color: #333;
     color: white;
   }
+
   
   .dark .shop {
     background-color: #333;
@@ -66,7 +60,11 @@
   .dark .product-card {
     border-color: white;
     color: white;
+    box-shadow: rgb(255, 255, 255) 0px 0px 2px 0px, rgba(121, 129, 139, 0.11) 0px 2px 4px 0px, rgba(110, 116, 124, 0.1) 0px 4px 8px 0px;
+
   }
+
+
   
   .dark .product-card .AddToCartButton {
     background-color: #555;
@@ -89,12 +87,13 @@
   .dark .LearnMoreButton:active {
     background-color: #777;
   }
-  .dark .switchText{
-    color: black;
+
+
+  .dark .dark-mode-switch{
+    background-color:white
+
   }
-  .switchText{
-    color: rgb(255, 255, 255);
-  }
-  .dark-mode-switch{
-    color: black;
+  .dark .navbar{
+    background-color:white;
+    color:black;
   }
