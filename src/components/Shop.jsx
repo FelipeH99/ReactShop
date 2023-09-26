@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 "use client";
 import { useState } from "react";
-import { Product } from "./product";
+import { Product } from "./Product";
 import "./shop.css";
 const hamburgesa =
   "https://www.unileverfoodsolutions.com.co/dam/global-ufs/mcos/NOLA/calcmenu/recipes/col-recipies/fruco-tomate-cocineros/HAMBURGUESA%201200x709.png";
