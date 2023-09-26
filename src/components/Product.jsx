@@ -40,7 +40,7 @@ export const Product = ({
       <input
         type="text"
         value={titulo}
-        onChange={(e) => handleTitleChange(parseInt(e.target.value, 10))}
+        onChange={(e) => handleTitleChange(e)}
         min="0"
       />
       <label>Quantity:</label>
