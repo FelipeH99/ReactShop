@@ -35,7 +35,7 @@
     height: 24px;
     background-color: #666666;
     border-radius: 50%;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.3s ease-in-out;
   }
   .dark .dark-mode-switch input[type="checkbox"]:before {
     background-color: rgb(37, 35, 35);

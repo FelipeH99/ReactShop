@@ -4,7 +4,6 @@ import "./darkmode.css";
 const DarkModeSwitch = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // Load the initial dark mode state from local storage
   useEffect(() => {
     const savedDarkMode = localStorage.getItem("darkMode");
     if (savedDarkMode) {
@@ -12,7 +11,6 @@ const DarkModeSwitch = () => {
     }
   }, []);
 
-  // Update dark mode state and local storage when the switch is toggled
   const toggleDarkMode = () => {
     const newDarkModeState = !isDarkMode;
     setIsDarkMode(newDarkModeState);

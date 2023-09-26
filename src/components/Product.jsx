@@ -20,7 +20,6 @@ export const Product = ({
   const handleQuantityChange = (e) => {
     const newQuantity = parseInt(e.target.value, 10);
     if (isNaN(newQuantity)) {
-      // If newQuantity is not a number, don't update the state
       return;
     }
     setCantidad(newQuantity);
