@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import "./App.css";
 import Navbar from "./components/NavBar";
 import Shop from "./components/shop";

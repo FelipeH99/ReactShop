@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-"use client";
 
 import { useState } from "react";
 import { Product } from "./Product";
@@ -74,7 +72,7 @@ const Shop = () => {
   const [totalQuantity, setTotalQuantity] = useState(0);
 
   const handleChangeTotal = (data) => {
-    setTotalQuantity(totalQuantity + data);
+    setTotalQuantity((current) => current + data);
   };
   return (
     <div className="shop">
