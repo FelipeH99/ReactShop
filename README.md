@@ -26,7 +26,7 @@ npm ci
 npm run dev
 ```
 
-Abrí la URL que muestra Vite, bajo `/ReactShop/`.
+Abrí la URL local que muestra Vite. La app usa `/` en Vercel y desarrollo. El workflow de GitHub Pages compila con `--base=/ReactShop/`.
 
 ```sh
 npm run lint
@@ -41,7 +41,7 @@ npm run preview
 | `src/components/Shop.jsx` | Catálogo y contador total |
 | `src/components/Product.jsx` | Edición y selección de cantidad |
 | `src/components/DarkModeSwitch.jsx` | Cambio de tema |
-| `vite.config.js` | Ruta base para GitHub Pages |
+| `vite.config.js` | Ruta base para Vercel; Pages pasa su subruta al compilar |
 
 ## Publicación
 
@@ -50,3 +50,7 @@ El workflow de Pages instala dependencias, compila y publica únicamente `dist/`
 ## Próximas mejoras
 
 Persistencia del carrito, imágenes locales optimizadas y pruebas de interacción. Este proyecto complementa mis trabajos de backend e integración; no representa una tienda en producción.
+
+## Despliegue en Vercel
+
+Node.js 22, comando `npm run build` y directorio `dist`. La versión anterior usaba una subruta de GitHub Pages en Vercel: el HTML cargaba, pero los archivos JS/CSS respondían 404. `engines.node` evita que nuevos builds intenten usar Node 18, retirado por Vercel.

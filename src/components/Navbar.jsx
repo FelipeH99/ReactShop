@@ -10,7 +10,7 @@ const Navbar = () => {
       </div>
       <ul className="nav-links">
         <li>
-          <a href="/ReactShop/">Home</a>
+          <a href={import.meta.env.BASE_URL}>Home</a>
         </li>
         <li>
           <a href="https://github.com/FelipeH99/ReactShop">Github Repo</a>
